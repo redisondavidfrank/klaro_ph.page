@@ -743,7 +743,7 @@ strong {
 
 /* Media Queries for responsiveness */
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .artists-hover {
     padding: 25px;
   }
@@ -763,7 +763,36 @@ strong {
   .artists-hover {
     padding: 15px;
   }
+} */
+
+/* NEW */
+@media only screen and (max-width: 768px) {
+  .artists-hover {
+    padding: 25px;
+  }
+
+  .artists-hover p strong {
+    min-width: auto;
+    margin-right: 0;
+  }
+
+  .artists-hover p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .artists-hover img {
+    max-width: 100%; /* Ensure images don't stretch */
+    height: auto; /* Maintain aspect ratio */
+  }
 }
+
+@media only screen and (max-width: 576px) {
+  .artists-hover {
+    padding: 15px;
+  }
+}
+
 
 
 /*---------------------------------------
